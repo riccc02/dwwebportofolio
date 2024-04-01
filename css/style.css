@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #C4C4C4;
+}
+
+.cardBox {
+    background-color: white;
+    margin: 7vh 7vw;
+    padding: 100px 20vw;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px rgb(58, 58, 58);
+}
+
+.cardContent1 > h1 {
+    font-family: 'Poppins';
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.cardContent1 > p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-bottom: 25px;
+
+    text-align: justify;
+}
+
+.contact {
+    background-color: #28282B;
+    color: white;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+}
+
+.downloadCV {
+    display: flex;
+    flex-direction: row;
+}
+
+.dcvCont {
+    /* background-color: red; */
+    height: 3vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dcvText {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 1vw;
+
+    text-decoration: none;
+    color: black;
+}
+
+.dcvImg {
+    width: 24px;
+    height: 24px;
+    /* background-color: red; */
+}
+
+.sosmedLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: red; */
+    margin: 25px 0;
+}
+
+.sosmedLogo > a {
+    width: 44px;
+    height: 44px;
+}
+.sosmedLogo > a > img {
+    width: 44px;
+    height: 44px;
+}
+
+.marginLeftSosmed {
+    margin-left: 2vw;
+}
+
+.profileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pfCard{
+    box-shadow: 0px 0px 14px rgb(151, 151, 151);
+    border-radius: 12px;
+}
+
+.pfCard > h1 {
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 10px;
+    height: 50px;
+    /* background-color: red; */
+}
+
+.pfCard > p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
