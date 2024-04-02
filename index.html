@@ -5,44 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portofolio</title>
     <link rel="icon" href="assets/logo/dumbwaysIcon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
+        <div class="navbar">
+            <ul>
+                <li><img style="width: auto; height: 50px;" src="assets/logo/dumbwaysLogo.png" alt=""></li>
+                <li class="marginLeftNavbar"><a style="text-decoration: none; color: black;" href="index.html">Home</a></li>
+                <li class="marginLeftNavbar"><a style="text-decoration: none; color: black;" href="">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="contactMe">
+            <a href="../contactMe/contactMe.html">
+                contact me
+            </a>
+        </div>
+    </div>
+
     <div class="cardBox">
-        <div class="cardContent1">
-            <h1>Hi, Welcome to my site!</h1>
-            <p>Let me introduce myself. I'm Eric, and I am currently in my eighth semester pursuing my degree in Computer Science at BINUS University. I am deeply passionate about the world of programming, particularly because it requires a strong analytical skill set. Throughout my academic journey, I have found myself drawn to languages such as C and JavaScript, with a special focus on mastering the React library. I believe that proficiency in these languages not only allows me to express my creativity but also enables me to tackle complex problems with efficiency and precision. I am excited to continue exploring the endless possibilities that the field of computer science offers and to contribute positively to its advancements. Thank you for taking the time to learn a little bit about me. I look forward to engaging with all of you in our shared journey of learning and discovery. </p>
-            <button class="contact">
-                contact
-            </button>
-            <br/>
-            <div class="downloadCV">
-                <div class="dcvCont">
-                    <a class="dcvText" href="assets/docs/ERIC - CV.pdf" download>download CV</a>
+        <div class="leftCardBox">
+            <div class="cardContent1">
+                <h1>Hi, Welcome to my site!</h1>
+                <p>Let me introduce myself. I'm Eric, and I am currently in my eighth semester pursuing my degree in Computer Science at BINUS University. I am deeply passionate about the world of programming, particularly because it requires a strong analytical skill set. Throughout my academic journey, I have found myself drawn to languages such as C and JavaScript, with a special focus on mastering the React library. I believe that proficiency in these languages not only allows me to express my creativity but also enables me to tackle complex problems with efficiency and precision. I am excited to continue exploring the endless possibilities that the field of computer science offers and to contribute positively to its advancements. Thank you for taking the time to learn a little bit about me. I look forward to engaging with all of you in our shared journey of learning and discovery. </p>
+                <div class="contactCv">
+                    <button class="contact">
+                        contact
+                    </button>
+                    <div class="downloadCV">
+                        <div class="dcvCont">
+                            <a class="dcvText" href="assets/docs/ERIC - CV.pdf" download>download CV</a>
+                        </div>
+                        <div class="dcvCont">
+                            <a href="assets/docs/ERIC - CV.pdf" download>
+                                <img class="dcvImg" src="assets/icons/iconDownload.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="dcvCont">
-                    <a href="assets/docs/ERIC - CV.pdf" download>
-                        <img class="dcvImg" src="assets/icons/iconDownload.png" alt="">
-                    </a>
+                <div class="sosmedLogo">
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="assets/icons/linkedin.png" alt=""></a>
+                    <a class="marginLeftSosmed" href="https://www.instagram.com/" target="_blank"><img src="assets/icons/instagram.png" alt=""></a>
+                    <a class="marginLeftSosmed" href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook.png" alt=""></a>
+                    <a class="marginLeftSosmed" href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter.png" alt=""></a>
                 </div>
             </div>
         </div>
 
-        <div class="sosmedLogo">
-            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="assets/icons/linkedin.png" alt=""></a>
-            <a class="marginLeftSosmed" href="https://www.instagram.com/" target="_blank"><img src="assets/icons/instagram.png" alt=""></a>
-            <a class="marginLeftSosmed" href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook.png" alt=""></a>
-            <a class="marginLeftSosmed" href="https://twitter.com/" target="_blank"><img src="assets/icons/twitter.png" alt=""></a>
-        </div>
-
-        <div class="profileCard">
-            <div class="pfCard">
-                <img style="width: 300px; border-top-left-radius: 12px; border-top-right-radius: 12px;" src="assets/image/selfPic.jpg" alt="">
-                <h1>Eric</h1>
-                <p>Full-stack Developer</p>
+        <div class="rightCardBox">
+            <div class="profileCard">
+                <div class="pfCard">
+                    <img style="width: 350px; border-top-left-radius: 12px; border-top-right-radius: 12px;" src="assets/image/selfPic.jpg" alt="">
+                    <h1>Eric</h1>
+                    <p>Full-stack Developer</p>
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
