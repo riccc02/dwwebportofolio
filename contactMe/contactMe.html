@@ -30,29 +30,31 @@
 
         <form class="formulir">
             <label for="name">Name</label>
-            <input type="text" class="name" id="name">
+            <input type="text" class="name" id="name" placeholder="Name">
 
             <label for="email">Email</label>
-            <input type="email" class="email" id="email">
+            <input type="email" class="email" id="email" placeholder="example@mail.com">
 
             <label for="phoneNumb">Phone Number</label>
-            <input type="number" class="phoneNumb" id="phoneNumb">
+            <input type="tel" class="phoneNumb" id="phoneNumb" placeholder="xxxxxxxxxx">
 
             <label for="subject">Subject</label>
             <select name="subject" id="subject" >
                 <option value="" disabled selected>Select Subject</option>
-                <option value="career">Career</option>
-                <option value="experience">Experience</option>
+                <option value="frontend">Front-end Developer</option>
+                <option value="backend">Back-end Developer</option>
+                <option value="fullstack">Full-stack Developer</option>
             </select>
 
             <label for="yourMsg">Your Message</label>
-            <textarea style="resize: none;" name="yourMsg" id="yourMsg" rows="5"></textarea>
-        
+            <textarea style="resize: none;" name="yourMsg" id="yourMsg" rows="5" placeholder="Enter your message..."></textarea>
+
             <div class="submitBox">
-                <input class="submitButton" type="submit" value="submit">
+                <button type="button" class="submitButton" onclick="submitHandler()">submit</button>
             </div>
         </form>
-
     </div>
+
+    <script src="./contactMe.js"></script>
 </body>
 </html>
