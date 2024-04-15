@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="icon" href="../assets/logo/dumbwaysIcon.png">
+    <link rel="stylesheet" href="../myProject/myProject.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <ul>
+                <li><img style="width: auto; height: 50px;" src="../assets/logo/dumbwaysLogo.png" alt=""></li>
+                <li class="marginLeftNavbar"><a style="text-decoration: none; color: black;" href="../index.html">Home</a></li>
+                <li class="marginLeftNavbar"><a style="text-decoration: none; color: black;" href="myProject.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="contactMe">
+            <a href="../contactMe/contactMe.html">
+                contact me
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>ADD MY PROJECT</h1>
+
+        <form class="formulir">
+            <div class="projNameBox">
+                <label style="font-size: 22px; font-weight: 600;" for="projName">Project Name</label>
+                <input class="projName" type="text" name="projName" id="projName">
+            </div>
+
+            <div class="dateRangeBox">
+                <div class="projStartDateBox">
+                    <div class="rangeDateFlex">
+                        <label style="font-size: 22px; font-weight: 600;" for="projStartDate">Start Date</label>
+                        <input class="projStartDate" type="date" name="projStartDate" id="projStartDate">
+                    </div>
+                </div>
+
+                <div class="gap01"></div>
+
+                <div class="projEndDateBox">
+                    <div class="rangeDateFlex">
+                        <label style="font-size: 22px; font-weight: 600;" for="projEndDate">End Date</label>
+                        <input class="projEndDate" type="date" name="projEndDate" id="projEndDate">
+                    </div>
+                </div>
+            </div>
+
+            <div class="projDescBox">
+                <label style="font-size: 22px; font-weight: 600;" for="projDesc">Description</label>
+                <textarea class="projDesc" style="resize: none;" name="projDesc" id="projDesc" cols="30" rows="10"></textarea>
+            </div>
+
+            <label style="margin-top: 20px; font-size: 22px; font-weight: 600;" for="projTech">Technology</label>
+            <div class="techRow1">
+                <div class="tech1">
+                    <input class="checkbox" type="checkbox" name="projTech" id="nodeJS" value="Node JS">
+                    <label class="textTech" for="nodeJS">Node JS</label>
+                </div>
+
+                <div class="tech2">
+                    <input class="checkbox" type="checkbox" name="projTech" id="nextJS" value="Next JS">
+                    <label class="textTech" for="nextJS">Next JS</label>
+                </div>
+            </div>
+
+            <div class="techRow2">
+                <div class="tech1">
+                    <input class="checkbox" type="checkbox" name="projTech" id="reactJS" value="React JS">
+                    <label class="textTech" for="reactJS">React JS</label>
+                </div>
+
+                <div class="tech2">
+                    <input class="checkbox" type="checkbox" name="projTech" id="typeScript" value="TypeScript">
+                    <label class="textTech" for="typeScript">TypeScript</label>
+                </div>
+            </div>
+
+            <label style="margin-top: 20px; font-size: 22px; font-weight: 600;" for="projImg">Upload Image</label>
+
+            <div class="secret" >
+                <input class="fileInput" accept="image/*" type="file" name="projImg" id="projImg">
+            </div>
+
+            <div class="submitBox">
+                <button type="submit" onclick="addProject(event)" class="submitButton">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="content2">
+        <h1>MY PROJECT</h1>
+
+        <div class="grid-container" id="gridContainer"></div>
+    </div>
+
+    <script src="../index.js"></script>
+    <script src="../myProject/myProject.js"></script>
+</body>
+</html>
